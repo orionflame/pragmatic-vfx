@@ -1412,3 +1412,18 @@ body {
     width: 100%;
   }
 }
+
+
+.hero-lede-secondary {
+  margin-top: 14px;
+  color: #aeb7bc;
+  font-size: clamp(16px, 1.7vw, 19px);
+}
+
+.final-cta-copy {
+  max-width: 780px;
+  margin: 22px auto 0;
+  color: var(--text-soft);
+  font-size: 17px;
+  line-height: 1.7;
+}
