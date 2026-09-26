@@ -82,26 +82,6 @@
       alt: "Pragmatic Workflow Profiler comparing Houdini performance captures",
       caption: ""
     },
-    "WF-TREEVIEW": {
-      kind: "placeholder",
-      title: "Node Treeview",
-      placeholder: "Product clip coming soon",
-      imageSrc: "",
-      videoSrc: "",
-      posterSrc: "",
-      alt: "Node Treeview navigating a nested Houdini scene",
-      caption: ""
-    },
-    "WF-TAB-MENU": {
-      kind: "placeholder",
-      title: "Context-Aware Tab Menu",
-      placeholder: "Product clip coming soon",
-      imageSrc: "",
-      videoSrc: "",
-      posterSrc: "",
-      alt: "Context-aware Houdini tool creation palette",
-      caption: ""
-    },
     "WF-HUD": {
       kind: "placeholder",
       title: "Performance HUD",
