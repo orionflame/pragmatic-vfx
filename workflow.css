@@ -1528,3 +1528,21 @@ body {
 .studio-price {
   font-weight: 500;
 }
+
+
+.pricing-panel-single .pricing-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 520px;
+}
+
+@media (max-width: 640px) {
+  .pricing-switch {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 16px;
+  }
+
+  .pricing-switch-button {
+    width: 100%;
+  }
+}
