@@ -1427,3 +1427,39 @@ body {
   font-size: 17px;
   line-height: 1.7;
 }
+
+
+.feature-chapter {
+  max-width: 760px;
+  margin: 108px auto 6px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.feature-chapter:first-child {
+  margin-top: 34px;
+}
+
+.feature-chapter-label {
+  margin: 0;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.feature-chapter-title {
+  margin: 9px auto 0;
+  color: #b4bdc2;
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 640px) {
+  .feature-chapter {
+    margin-top: 72px;
+    text-align: left;
+  }
+}
