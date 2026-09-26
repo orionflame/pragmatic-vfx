@@ -22,14 +22,24 @@
       alt: "Overlay Network Editor shown over the Houdini viewport",
       caption: ""
     },
+    "WF-HOTKEYS": {
+      kind: "placeholder",
+      title: "Context-Sensitive Rule-Based Hotkey System",
+      placeholder: "Rule-system demonstrations coming soon",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Context-sensitive Houdini hotkey rules resolving different actions",
+      caption: ""
+    },
     "WF-PARAMETERS": {
       kind: "placeholder",
-      title: "Parameter Editor",
+      title: "High-Density Parameter Editor",
       placeholder: "Product clip coming soon",
       imageSrc: "",
       videoSrc: "",
       posterSrc: "",
-      alt: "Pragmatic Workflow Parameter Editor controls",
+      alt: "Pragmatic Workflow High-Density Parameter Editor controls",
       caption: ""
     },
     "WF-CODE": {
@@ -40,6 +50,16 @@
       videoSrc: "",
       posterSrc: "",
       alt: "Monaco-based code editing integrated with Pragmatic Workflow",
+      caption: ""
+    },
+    "WF-HDK-SETUP": {
+      kind: "placeholder",
+      title: "One-Click HDK Development Environment Setup",
+      placeholder: "Setup and verification clip coming soon",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Workflow native build tool setup and HDK verification",
       caption: ""
     },
     "WF-NODE-INFO": {
@@ -72,14 +92,24 @@
       alt: "Pragmatic Workflow Profiler comparing Houdini performance captures",
       caption: ""
     },
-    "WF-FIND": {
+    "WF-TREEVIEW": {
       kind: "placeholder",
-      title: "Node Treeview + Tab Menu",
-      placeholder: "Product clips coming soon",
+      title: "Node Treeview",
+      placeholder: "Product clip coming soon",
       imageSrc: "",
       videoSrc: "",
       posterSrc: "",
-      alt: "Node Treeview and context-aware node creation palette",
+      alt: "Node Treeview navigating a nested Houdini scene",
+      caption: ""
+    },
+    "WF-TAB-MENU": {
+      kind: "placeholder",
+      title: "Context-Aware Tab Menu",
+      placeholder: "Product clip coming soon",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Context-aware Houdini tool creation palette",
       caption: ""
     },
     "WF-HUD": {
@@ -90,6 +120,16 @@
       videoSrc: "",
       posterSrc: "",
       alt: "Customizable CPU, RAM, GPU and VRAM performance gauges",
+      caption: ""
+    },
+    "WF-PLAYBAR": {
+      kind: "placeholder",
+      title: "Playbar & Timeline Controls",
+      placeholder: "Product clip coming soon",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Compact Houdini playback and timeline controls",
       caption: ""
     },
     "WF-CUSTOMIZE": {
@@ -262,6 +302,61 @@
     }));
   }
 
+
+  function installPricing() {
+    const tabs = [...document.querySelectorAll("[data-pricing-tab]")];
+    const panels = [...document.querySelectorAll("[data-pricing-panel]")];
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.getAttribute("data-pricing-tab");
+
+        tabs.forEach((item) => {
+          const active = item === tab;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-selected", active ? "true" : "false");
+        });
+
+        panels.forEach((panel) => {
+          panel.hidden = panel.getAttribute("data-pricing-panel") !== target;
+        });
+      });
+    });
+
+    const studioTiers = [...document.querySelectorAll("[data-studio-tier]")];
+    const price = document.querySelector("[data-studio-price]");
+    const label = document.querySelector("[data-studio-label]");
+    const detail = document.querySelector("[data-studio-detail]");
+    const checkout = document.querySelector("[data-studio-checkout]");
+    const contact = document.querySelector("[data-studio-contact]");
+
+    studioTiers.forEach((tier) => {
+      tier.addEventListener("click", () => {
+        studioTiers.forEach((item) => {
+          const active = item === tier;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-selected", active ? "true" : "false");
+        });
+
+        if (price) price.textContent = tier.dataset.price || "";
+        if (label) label.textContent = tier.dataset.label || "";
+        if (detail) detail.textContent = tier.dataset.detail || "";
+
+        const custom = tier.dataset.studioTier === "custom";
+        if (checkout) checkout.hidden = custom;
+        if (contact) {
+          contact.textContent = custom ? "Contact Sales" : "Contact us";
+          const subject = encodeURIComponent(
+            custom
+              ? "Pragmatic Workflow Studio Licensing - 21+ seats"
+              : "Pragmatic Workflow Studio Licensing - " + (tier.dataset.label || "")
+          );
+          contact.href = "mailto:animatrix2k7@gmail.com?subject=" + subject;
+        }
+      });
+    });
+  }
+
   function updateYear() {
     const year = document.querySelector("[data-current-year]");
     if (year) year.textContent = new Date().getFullYear();
@@ -270,6 +365,7 @@
   mountMedia();
   installVideoVisibility();
   installExplorer();
+  installPricing();
   updateYear();
 
   window.PRAGMATIC_WORKFLOW_MEDIA = mediaSlots;
