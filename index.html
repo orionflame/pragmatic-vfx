@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pragmatic Workflow for Houdini | Pragmatic VFX</title>
-  <meta name="description" content="Pragmatic Workflow is a production-focused interaction layer for Houdini built for high-density, low-latency technical work: faster parameter interaction, language-intelligent coding, change-aware inspection, programmable actions, overlay workflows, telemetry, profiling, and native development.">
+  <meta name="description" content="Pragmatic Workflow is a Flame-inspired production interaction layer for Houdini: high-density parameter work, context-aware coding, smarter node inspection, programmable actions, overlay editing, live resource telemetry, profiling, and native C++ development.">
   <meta name="theme-color" content="#0b0d0f">
   <meta property="og:title" content="Pragmatic Workflow for Houdini">
-  <meta property="og:description" content="High-density. Low-latency. Built for faster iteration in Houdini.">
+  <meta property="og:description" content="A production interface built for fluid technical work.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://workflow.pragmatic-vfx.com/">
   <link rel="apple-touch-icon" sizes="180x180" href="https://pragmatic-vfx.com/apple-touch-icon.png">
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./workflow.css?v=20260927-0225">
+  <link rel="stylesheet" href="./workflow.css?v=20260927-0255">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -45,17 +45,17 @@
     <section class="hero" id="overview">
       <div class="shell">
         <div class="hero-copy">
-          <p class="eyebrow">Pragmatic Workflow for Houdini</p>
+          <p class="eyebrow">Pragmatic Workflow</p>
           <h1>Houdini, supercharged.</h1>
-          <p class="hero-lede">Pragmatic Workflow rethinks how Houdini feels to operate in production: <strong>more immediate, more information-dense, more contextual, and more under your control.</strong> It brings a Flame-inspired focus on fluid interaction and spatial efficiency to the parts of Houdini you touch all day, without changing what makes Houdini Houdini.</p>
-          <p class="hero-lede hero-lede-secondary">Keep more of the graph, parameters, scene, and technical state visible at once. Put related controls closer together. Keep coding, inspection, actions, telemetry, profiling, and native development inside the working context instead of treating them as disconnected utilities. The result is not one feature or one speed trick, but a different production experience layered across Houdini.</p>
+          <p class="hero-lede"><strong>A production interface built for fluid technical work.</strong> Houdini is extraordinarily powerful, but complex work can scatter your attention across parameters, networks, code, diagnostics, and performance tools. Pragmatic Workflow brings a Flame-inspired focus on density, immediacy, and spatial efficiency to the interactions you repeat all day.</p>
+          <p class="hero-lede hero-lede-secondary">Keep more of the node, graph, scene, and technical state in view. Move through huge parameter interfaces without endless scrolling. Write VEX, OpenCL, Python, and C++ with language intelligence where the code lives. See what a node changed instead of comparing readouts by eye. Route actions from context, work on the graph over the viewport, watch system pressure, and investigate performance without constantly breaking your working rhythm.</p>
 
           <div class="hero-actions">
             <a class="button button-primary" href="#pricing">Get Workflow</a>
             <a class="button" href="#features">Explore the tools</a>
           </div>
 
-          <p class="hero-support"><strong>Immediate. Dense. Contextual. Technical.</strong> Built to keep the artist in flow while exposing more of what matters.</p>
+          <p class="hero-support"><strong>Less hunting. Less pane management. More useful state in view.</strong> Built for artists who live in Houdini all day.</p>
         </div>
 
         <figure class="hero-media">
@@ -71,24 +71,24 @@
 
         <div class="feature-chapter" aria-label="CORE WORKFLOW">
           <p class="feature-chapter-label">CORE WORKFLOW</p>
-          <p class="feature-chapter-title">Built for the high-frequency interactions that dominate a production day.</p>
+          <p class="feature-chapter-title">Built around the interactions that dominate a real production day.</p>
         </div>
 
-        <article class="feature-row feature-row-major">
+                <article class="feature-row feature-row-major">
           <div class="feature-copy">
             <p class="eyebrow">Production-speed parameter work</p>
-            <h2>Advanced Parameter Workspace</h2>
-            <p class="benefit-subheading">See and operate more of a complex node without turning the interface into a wall of controls.</p>
-            <p class="feature-description">Complex Houdini nodes can expose hundreds or even thousands of parameters. Pragmatic Workflow is built for that reality: related controls are arranged into compact spatial groups, compatible operations can share a row when that improves flow, labels stay close to the values they describe, and screen area is spent on useful state instead of generic padding.</p>
-            <p class="feature-description secondary-copy">The custom Qt parameter system is also engineered to stay responsive on very large parameter interfaces. That performance matters because the whole design depends on immediacy: opening a heavy node, switching folders, updating dependencies, and making repeated edits should not interrupt the working rhythm.</p>
+            <h2>High-Density Parameter Workspace</h2>
+            <p class="benefit-subheading">Built for the enormous parameter interfaces that technical Houdini work actually produces.</p>
+            <p class="feature-description">Complex nodes can expose hundreds or thousands of controls. Pragmatic Workflow replaces the conventional vertical parameter flow with a custom Qt workspace built around spatial grouping, direct interaction, and information density. Related controls stay close together, compatible operations can share a row when it helps, and the interface spends screen space on useful state instead of empty padding.</p>
+            <p class="feature-description secondary-copy">The point is not to make everything tiny. It is to make a large node readable at a glance and fast to operate. Navigate long interfaces fluidly, collapse structure when you do not need it, use compact control-specific interactions, and keep the panel responsive even on unusually heavy parameter layouts.</p>
             <div class="capability-pills">
               <span>High information density</span>
-              <span>Responsive on large parameter interfaces</span>
               <span>Spatial grouping</span>
-              <span>Shorter eye travel</span>
-              <span>Shorter pointer travel</span>
-              <span>Dynamic parameter dependencies</span>
-              <span>Complex-asset workflows</span>
+              <span>Direct micro-interactions</span>
+              <span>Fast navigation</span>
+              <span>Dynamic dependencies</span>
+              <span>Responsive on huge nodes</span>
+              <span>Parameter-state feedback</span>
               <span>Integrated code intelligence</span>
             </div>
           </div>
@@ -98,25 +98,22 @@
           </figure>
         </article>
 
-        <article class="feature-row feature-row-major reverse">
+                <article class="feature-row feature-row-major reverse">
           <div class="feature-copy">
             <p class="eyebrow">Technical development</p>
-            <h2>IDE-Grade Development Environment</h2>
+            <h2>Context-Aware IDE</h2>
             <p class="benefit-subheading">Write VEX, OpenCL, Python, and C++ without dropping back to a basic parameter text editor.</p>
-            <p class="feature-description">Completion, signature help, hover documentation, symbol navigation, API information, and context-sensitive suggestions stay available where you are actually writing the code. The editor is integrated into the parameter workflow, so technical iteration stays next to the node and scene it affects.</p>
-            <p class="feature-description secondary-copy">The intelligence is language-specific. VEX uses a dedicated language service, OpenCL understands Houdini binding context, Python works with HOM typing information, and C++ connects to HDK and the native toolchain. Monaco provides the editing surface; Pragmatic Workflow supplies the Houdini-aware language layer around it.</p>
+            <p class="feature-description">A Monaco-powered editor brings completion, signature help, hover documentation, symbol navigation, API information, and context-sensitive suggestions directly into the parameter workflow. The code stays next to the node and scene it affects instead of turning every edit into a trip to another tool.</p>
+            <p class="feature-description secondary-copy">The intelligence changes with the language and context: dedicated VEX semantics, Houdini-aware OpenCL bindings, HOM typing for Python, and C++/HDK integration with the native toolchain. It is not one generic autocomplete layer stretched across four languages.</p>
             <div class="capability-pills">
-              <span>Dedicated language services</span>
-              <span>VEX semantic intelligence</span>
-              <span>OpenCL binding-aware intelligence</span>
-              <span>Python and HOM typing</span>
-              <span>C++ and HDK integration</span>
-              <span>Completion and signature help</span>
+              <span>Dedicated VEX intelligence</span>
+              <span>OpenCL binding context</span>
+              <span>Python + HOM typing</span>
+              <span>C++ + HDK integration</span>
+              <span>Completion &amp; signatures</span>
               <span>Hover documentation</span>
               <span>Symbol navigation</span>
             </div>
-
-            <p class="feature-impact"><strong>Keep technical reasoning inside Houdini.</strong> Language capabilities differ by context, and C++ requires the appropriate HDK and toolchain environment. Workflow does not generate code for you.</p>
           </div>
 
           <figure class="feature-media">
@@ -124,24 +121,24 @@
           </figure>
         </article>
 
-        <article class="feature-row">
+                <article class="feature-row">
           <div class="feature-copy">
-            <p class="eyebrow">What did this node change?</p>
-            <h2>Pragmatic Node Info &amp; Change Tracking</h2>
-            <p class="benefit-subheading">See what a node created, modified, deleted, touched, and how its memory footprint changed.</p>
-            <p class="feature-description">Pragmatic Node Info turns MMB inspection into a technical change report. Compare against available input data to classify attributes and groups as created, modified, deleted, or unchanged, and surface topology changes separately so structural edits are immediately visible.</p>
-            <p class="feature-description secondary-copy">Memory deltas show how much memory was added or removed, including per-item changes for attributes, groups, and VDBs. For VDB data, Node Info also exposes the relevant VDB state and touch information, including reported tree, metadata, or transform revisions. The result is an immediate answer to the question: <strong>what did this node actually touch?</strong></p>
+            <p class="eyebrow">Smarter middle-click</p>
+            <h2>Pragmatic Node Info</h2>
+            <p class="benefit-subheading">See what the node changed instead of comparing two blocks of statistics by eye.</p>
+            <p class="feature-description">Pragmatic Node Info turns MMB inspection into a change report. Compare against available input data to surface attributes and groups that were created, modified, deleted, or left unchanged, and flag topology changes separately so structural edits do not disappear inside a wall of metadata.</p>
+            <p class="feature-description secondary-copy">Memory deltas show where the footprint moved across attributes, groups, and VDBs. For VDB work, inspect reported tree, metadata, and transform touches alongside the volume state. The question becomes simple: <strong>what did this node actually touch?</strong></p>
             <div class="capability-pills">
-              <span>Created / modified / deleted attributes</span>
-              <span>Created / modified / deleted groups</span>
-              <span>Topology change detection</span>
+              <span>Attribute changes</span>
+              <span>Group changes</span>
+              <span>Topology changes</span>
               <span>Per-attribute memory delta</span>
               <span>Per-group memory delta</span>
-              <span>VDB change &amp; memory delta</span>
-              <span>VDB tree / metadata / transform touches</span>
+              <span>VDB memory delta</span>
+              <span>VDB touch state</span>
               <span>Attribute visualizers</span>
             </div>
-            <p class="feature-impact"><strong>Debug from the node outward.</strong> First identify what the node changed and where the memory moved, then inspect underlying values only when you need them. Touch/revision signals identify changed state; they are not a value-by-value diff of every element.</p>
+            <p class="feature-impact">Touch and revision indicators report changed state where available; they are not a per-element value diff.</p>
           </div>
 
           <figure class="feature-media">
@@ -149,22 +146,22 @@
           </figure>
         </article>
 
-        <article class="feature-row feature-row-major reverse">
+                <article class="feature-row feature-row-major reverse">
           <div class="feature-copy">
-            <p class="eyebrow">Programmable interaction</p>
-            <h2>Context-Sensitive Hotkey &amp; Action System</h2>
-            <p class="benefit-subheading">One key can resolve to different operations from the network context, modifiers, selection state, and your own Python logic.</p>
-            <p class="feature-description">Build rules around the current network context, Ctrl/Alt/Shift/Space modifiers, and whether something is selected. A single configured key can resolve to different operations across supported network types and working states instead of becoming another isolated shortcut to memorize.</p>
-            <p class="feature-description secondary-copy">Rules can execute your own Python functions or expressions with access to the originating event, run supported recipes and shelf tools, create operators, or open custom menus. Custom Python can inspect Houdini in more detail when the built-in conditions are not enough.</p>
+            <p class="eyebrow">Stop running out of hotkeys</p>
+            <h2>Context-Aware Action System</h2>
+            <p class="benefit-subheading">One key can resolve to different operations from the current network, modifiers, selection state, and your own Python logic.</p>
+            <p class="feature-description">Memorizing a separate shortcut for every script, recipe, and node action does not scale. Build rules around the current network context, Ctrl/Alt/Shift/Space modifiers, and selected versus unselected state so the same key can do the appropriate thing for the task in front of you.</p>
+            <p class="feature-description secondary-copy">Rules can execute custom Python functions or expressions with the originating UI event, create operators, run supported recipes and shelf tools, or open custom menus at the cursor. When the built-in conditions are not enough, your Python can inspect Houdini and make the decision.</p>
             <div class="capability-pills">
-              <span>Context rules</span>
+              <span>Network-context rules</span>
               <span>Modifier rules</span>
               <span>Selection-state rules</span>
-              <span>Arbitrary Python calls</span>
-              <span>Recipes and shelf tools</span>
+              <span>Python event logic</span>
+              <span>Operator creation</span>
+              <span>Recipes &amp; shelf tools</span>
               <span>Custom menus</span>
             </div>
-            <p class="feature-impact">This is programmable interaction with Houdini, not merely a replacement shortcut list. ONE is optional; the Hotkey System also works in a normal Network Editor.</p>
           </div>
 
           <figure class="feature-media">
@@ -172,21 +169,21 @@
           </figure>
         </article>
 
-        <article class="feature-row feature-row-major">
+                <article class="feature-row feature-row-major">
           <div class="feature-copy">
-            <p class="eyebrow">Immersive workspace</p>
-            <h2>Overlay Network Editor</h2>
-            <p class="benefit-subheading">A full-size viewport and node network in the same screen space.</p>
-            <p class="feature-description">A side-by-side layout makes the viewport and network compete for space. ONE layers the network directly over the viewport, letting both use the same working area. Edit the graph and evaluate the result in place instead of repeatedly shifting attention between separate panes or monitors.</p>
-            <p class="feature-description secondary-copy">Combine ONE with fullscreen mode and the integrated Parameter Editor for an immersive Houdini workspace: a large viewport, your graph over it, and the controls you need close by. On a laptop, every reclaimed pane matters. On a large monitor, the same arrangement gives both the scene and graph room while keeping the edit and result loop together.</p>
+            <p class="eyebrow">Flame-style edit / result loop</p>
+            <h2>Overlay Network Editor (ONE)</h2>
+            <p class="benefit-subheading">Edit the graph over the result instead of making the network and viewport fight for screen space.</p>
+            <p class="feature-description">Traditional pane layouts divide the screen between the graph and the viewport. ONE layers the Network Editor directly over the 3D view, so both can use the same working area. Edit the node graph and evaluate the result underneath it without repeatedly shifting attention between separate panes or monitors.</p>
+            <p class="feature-description secondary-copy">Run fullscreen, keep a large viewport, overlay the graph, and keep the Parameter Workspace nearby for a compact Flame-inspired production loop. Dial the network opacity up or down, reveal or hide it quickly, and reclaim screen area on anything from a laptop to a large workstation display.</p>
             <div class="capability-pills" aria-label="Overlay Network Editor benefits">
-              <span>Network-over-viewport overlay</span>
+              <span>Network over viewport</span>
               <span>Shared screen area</span>
+              <span>Fullscreen workflow</span>
               <span>Adjustable opacity</span>
               <span>Quick reveal / hide</span>
-              <span>Parameter Workspace integration</span>
+              <span>Parameter Workspace pairing</span>
             </div>
-            <p class="feature-impact"><strong>Edit here. See the result here.</strong> In an illustrative 50/50 split, overlaying the views lets both use the same full workspace instead of dividing it between them.</p>
           </div>
 
           <figure class="feature-media">
@@ -196,24 +193,26 @@
 
         <div class="feature-chapter" aria-label="PERFORMANCE">
           <p class="feature-chapter-label">PERFORMANCE</p>
-          <p class="feature-chapter-title">Watch system pressure during everyday work, then switch to detailed profiling when a scene needs investigation.</p>
+          <p class="feature-chapter-title">Keep hardware pressure visible during everyday work, then switch to detailed profiling when a scene needs investigation.</p>
         </div>
 
-        <article class="feature-row reverse">
+                <article class="feature-row reverse">
           <div class="feature-copy">
-            <p class="eyebrow">System telemetry</p>
+            <p class="eyebrow">Hardware pressure at a glance</p>
             <h2>Resource Monitor</h2>
-            <p class="benefit-subheading">Live CPU, RAM, GPU, and VRAM telemetry in a customizable Houdini HUD.</p>
-            <p class="feature-description">Pragmatic Resource Monitor keeps live CPU, RAM, GPU, and VRAM telemetry visible in a compact Houdini HUD, giving you an immediate read on system pressure while you work.</p>
-            <p class="feature-description secondary-copy">Choose Ring, Liquid, Radiant Liquid, Segmented Arc, Ribbon Sweep, or Thermal Bloom, then configure resource colors, typography, scale, spacing, opacity, and supported animation behavior. An optional cook timeline can show the cook activity observed by Workflow's notification hooks.</p>
+            <p class="benefit-subheading">Keep CPU, RAM, GPU, and VRAM in peripheral vision while you work.</p>
+            <p class="feature-description">Pragmatic Resource Monitor puts live system telemetry directly in the Houdini workspace. Watch CPU, system RAM, GPU, and VRAM pressure during heavy simulations, procedural generation, large scenes, or GPU workflows without maintaining a separate monitoring setup.</p>
+            <p class="feature-description secondary-copy">An optional cook timeline adds context about cook activity observed by Workflow. Choose from compact rings or more expressive liquid, segmented, ribbon, and thermal gauges, then tune the presentation so the telemetry stays readable without becoming the interface.</p>
             <div class="capability-pills">
-              <span>CPU, RAM, GPU, VRAM</span>
-              <span>Six gauge styles</span>
+              <span>CPU</span>
+              <span>System RAM</span>
+              <span>GPU</span>
+              <span>VRAM</span>
               <span>Optional cook timeline</span>
-              <span>Per-resource colors</span>
-              <span>Typography and layout controls</span>
+              <span>Six gauge styles</span>
+              <span>Configurable presentation</span>
             </div>
-            <p class="feature-impact">Telemetry availability varies by hardware and platform. System-wide GPU and RAM readings are not exact per-node resource ownership.</p>
+            <p class="feature-impact">Telemetry shows system pressure; it does not assign GPU or RAM usage to an individual node.</p>
           </div>
 
           <figure class="feature-media">
@@ -221,22 +220,22 @@
           </figure>
         </article>
 
-        <article class="feature-row">
+                <article class="feature-row">
           <div class="feature-copy">
-            <p class="eyebrow">Deep performance analysis</p>
+            <p class="eyebrow">Follow the expensive work</p>
             <h2>Advanced Performance Profiler</h2>
-            <p class="benefit-subheading">Turn Houdini performance data into a real investigation.</p>
-            <p class="feature-description">Pragmatic Workflow turns captured performance data into a structured investigation workspace. Start from hotspots, then trace recorded work through an event call tree, bottom-up caller analysis, flame graphs, and direct node/path actions.</p>
-            <p class="feature-description secondary-copy">Separate VEX program reports add another layer for technical investigation. Move from a hotspot to the recorded callers, surrounding events, affected node, and VEX program information without flattening the capture into a single timing table.</p>
+            <p class="benefit-subheading">Move from a hotspot into the relationships behind it.</p>
+            <p class="feature-description">Pragmatic Workflow turns captured Houdini performance data into a modern investigation workspace. Start from expensive recorded work, then trace it through event call trees, bottom-up caller views, flame graphs, and direct node navigation.</p>
+            <p class="feature-description secondary-copy">Separate VEX program reports keep code-level investigation from getting buried inside general SOP evaluation. Instead of stopping at a timing table, move through the recorded callers and surrounding events, then jump back to the node you need to inspect.</p>
             <div class="capability-pills">
-              <span>Hotspot-oriented analysis</span>
-              <span>Event call tree</span>
+              <span>Hotspot analysis</span>
+              <span>Event call trees</span>
               <span>Bottom-up callers</span>
               <span>Event flame graphs</span>
-              <span>Recorded-node navigation</span>
               <span>VEX program reports</span>
+              <span>Direct node navigation</span>
             </div>
-            <p class="feature-impact"><strong>From hotspot to cause.</strong> Event views follow captured Houdini work rather than source-level CPU sampling, keeping the analysis tied to what Houdini actually recorded.</p>
+            <p class="feature-impact">Event analysis follows Houdini's captured performance data rather than source-level CPU sampling.</p>
           </div>
 
           <figure class="feature-media">
@@ -253,20 +252,20 @@
           <p class="feature-chapter-title">Set up and verify native C++ and HDK development when the work calls for it.</p>
         </div>
 
-        <article class="feature-row reverse feature-row-major">
+                <article class="feature-row reverse feature-row-major">
           <div class="feature-copy">
             <p class="eyebrow">Native development</p>
-            <h2>Native C++ &amp; HDK Development</h2>
-            <p class="benefit-subheading">From Houdini to a verified native build environment.</p>
-            <p class="feature-description">The HDK already ships with Houdini, and SideFX documents hcustom, CMake, and the compiler requirements for native plugins. Workflow's contribution is not a replacement SDK; it brings guided toolchain setup and verification into Houdini itself.</p>
-            <p class="feature-description secondary-copy">One setup action starts the supported compiler/toolchain setup flow and then verifies the environment with a fresh HDK compile, native load, and function-call check. Workflow's C++ editing environment then connects that verified native setup to its HDK language intelligence.</p>
+            <h2>C++ &amp; HDK Development</h2>
+            <p class="benefit-subheading">Go from toolchain setup to a verified native build without turning environment setup into its own project.</p>
+            <p class="feature-description">Start the supported native-development setup from inside Workflow, guide the required compiler and environment configuration, then verify the result with a fresh HDK compile, native load, and function-call check. When verification passes, you know the environment can actually build and load Houdini-native code.</p>
+            <p class="feature-description secondary-copy">The same C++ environment feeds Workflow's HDK-aware language intelligence. If you also use Pragmatic Operators, pair it with C++ Wrangle to write, compile, and iterate on native node logic directly in the scene.</p>
             <div class="capability-pills">
-              <span>Guided native toolchain setup</span>
-              <span>Real HDK compile verification</span>
-              <span>Native load and function-call check</span>
-              <span>C++ and HDK language intelligence</span>
+              <span>Guided toolchain setup</span>
+              <span>Real HDK compile check</span>
+              <span>Native load verification</span>
+              <span>C++ / HDK intelligence</span>
             </div>
-            <p class="feature-impact"><strong>Using Pragmatic Operators too?</strong> Pair Workflow with C++ Wrangle to write, compile, and iterate on C++ node logic directly inside Houdini. C++ Wrangle is part of Pragmatic Operators and is sold separately from Workflow.</p>
+            <p class="feature-impact">C++ Wrangle is part of Pragmatic Operators and is sold separately from Workflow.</p>
           </div>
 
           <figure class="feature-media">
@@ -288,23 +287,23 @@
       <div class="shell">
         <div class="section-heading">
           <p class="eyebrow">Production UX</p>
-          <h2>Designed around production flow, not isolated widgets.</h2>
-          <p>Pragmatic Workflow treats visibility, latency, spatial organization, context switching, and interaction distance as parts of the same production problem. The aim is not simply to make individual clicks faster, but to make complex Houdini work feel more immediate, legible, and continuous.</p>
+          <h2>Designed for flow, not for a checklist of widgets.</h2>
+          <p>The individual tools matter, but the larger goal is how they work together. Pragmatic Workflow treats visibility, interaction distance, latency, spatial organization, and context switching as parts of the same production problem.</p>
         </div>
 
         <div class="personalization-grid">
           <div class="personalization-points">
             <div class="personalization-point">
-              <h3>Density without chaos</h3>
-              <p>Keep more useful state visible at once through compact controls, spatial grouping, and layouts designed around related operations rather than generic vertical stacking.</p>
+              <h3>More state in view</h3>
+              <p>Keep more of the node, graph, scene, telemetry, and diagnostic state visible at the same time instead of repeatedly opening, closing, and hunting through interface layers.</p>
             </div>
             <div class="personalization-point">
-              <h3>Immediate feedback</h3>
-              <p>Frequent interactions should feel direct. Responsiveness matters most on the heavy, monolithic interfaces where small delays repeatedly break rhythm, so latency is treated as part of the UX rather than a separate optimization exercise.</p>
+              <h3>Direct interaction</h3>
+              <p>Frequent operations are designed to feel immediate, from dense parameter work and contextual actions to overlay editing and node diagnostics. Responsiveness is part of the interaction design, especially on heavy technical assets.</p>
             </div>
             <div class="personalization-point">
               <h3>Stay in context</h3>
-              <p>Parameter work, code, node diagnostics, actions, network editing, telemetry, profiling, and native development are designed to feel connected instead of like separate utilities you repeatedly enter and leave.</p>
+              <p>Code, parameters, node changes, actions, network editing, telemetry, profiling, and native development stay connected to the work instead of behaving like unrelated utilities you repeatedly enter and leave.</p>
             </div>
           </div>
 
@@ -476,9 +475,8 @@
           <details class="feature-group">
             <summary>Context-Sensitive Hotkey &amp; Action System</summary>
             <ul>
-              <li>User-authored rules combining Houdini context, modifiers, and selected/unselected state</li>
-              <li>Additional logic through arbitrary Python functions or expressions with event context</li>
-              <li>Arbitrary Python function or expression calls with event context</li>
+              <li>User-authored rules combining network context, modifiers, and selected/unselected state</li>
+              <li>Arbitrary Python function or expression calls with the originating event context</li>
               <li>Custom Python can implement additional selection and type-specific logic</li>
               <li>Operator creation with supported presets, naming, and button actions</li>
               <li>Tab tool recipes and decoration recipes</li>
@@ -493,11 +491,11 @@
           </details>
 
           <details class="feature-group">
-            <summary>Parameter editing</summary>
+            <summary>High-Density Parameter Workspace</summary>
             <ul>
               <li>High-density control layouts for complex nodes</li>
               <li>Spatial grouping and compact path, string, menu, and numeric treatments</li>
-              <li>Low-latency interaction and dependent-control updates</li>
+              <li>Responsive interaction and dependent-control updates on large parameter interfaces</li>
               <li>Parameter-state and expression feedback</li>
               <li>Configurable density and label presentation</li>
               <li>Integrated language-intelligent code editing</li>
@@ -505,7 +503,7 @@
           </details>
 
           <details class="feature-group">
-            <summary>Code editing</summary>
+            <summary>Context-Aware IDE</summary>
             <ul>
               <li>Monaco-based editor integration</li>
               <li>Dedicated VEX language service</li>
@@ -520,7 +518,7 @@
           </details>
 
           <details class="feature-group">
-            <summary>Node Info</summary>
+            <summary>Pragmatic Node Info</summary>
             <ul>
               <li>Input-relative created / modified / deleted attribute classification</li>
               <li>Input-relative created / modified / deleted group classification</li>
@@ -533,7 +531,7 @@
           </details>
 
           <details class="feature-group">
-            <summary>Profiling</summary>
+            <summary>Advanced Performance Profiler</summary>
             <ul>
               <li>Hotspot-oriented analysis over Houdini performance data</li>
               <li>Event call tree and bottom-up caller analysis</li>
@@ -613,7 +611,7 @@
 
           <details class="faq-item">
             <summary>What is included with Workflow?</summary>
-            <p>Workflow includes the workspace systems described on this page: Overlay Network Editor, Context-Sensitive Hotkey &amp; Action System, Advanced Parameter Workspace, IDE-Grade Development Environment, Native C++ and HDK Development, Pragmatic Node Info and Change Tracking, Advanced Performance Profiler, Resource Monitor, Overlay Network Editor, Context-Sensitive Hotkey &amp; Action System, and their verified supporting controls. Pragmatic Operators is a separate product.</p>
+            <p>Workflow includes the systems described on this page: High-Density Parameter Workspace, Context-Aware IDE, Pragmatic Node Info, Context-Aware Action System, Overlay Network Editor, Resource Monitor, Advanced Performance Profiler, C++ &amp; HDK Development, and their supporting workflow tools. Pragmatic Operators is a separate product.</p>
           </details>
 
           <details class="faq-item">
@@ -623,7 +621,7 @@
 
           <details class="faq-item">
             <summary>Can I customize the interface?</summary>
-            <p>Yes. Verified options include typography, density, layout and spacing, colors, supported interaction preferences, overlay settings, playbar interaction, and Performance HUD presentation. Available options vary by component.</p>
+            <p>Yes. Verified options include density and layout, supported interaction preferences, overlay behavior, timeline interaction, Resource Monitor presentation, and other component-specific UI preferences. Available options vary by component.</p>
           </details>
 
           <details class="faq-item">
@@ -637,8 +635,8 @@
     <section class="final-cta">
       <div class="shell">
         <p class="eyebrow">Pragmatic Workflow for Houdini</p>
-        <h2>Make Houdini work the way you do.</h2>
-        <p class="final-cta-copy">Keep more of the work visible, reduce interaction overhead, and make the repeated technical operations of a Houdini day feel faster and more direct.</p>
+        <h2>Keep the work in front of you.</h2>
+        <p class="final-cta-copy">More of the node, graph, scene, code, and technical state in view. Fewer interruptions between the problem you are solving and the controls you need to solve it.</p>
         <div class="final-actions">
           <a class="button button-primary" href="#pricing">Get Workflow</a>
           <a class="button" href="#all-features">Explore all features</a>
@@ -659,6 +657,6 @@
     </div>
   </footer>
 
-  <script src="./workflow.js?v=20260927-0225"></script>
+  <script src="./workflow.js?v=20260927-0255"></script>
 </body>
 </html>
