@@ -22,6 +22,16 @@
       alt: "Overlay Network Editor shown over the Houdini viewport",
       caption: ""
     },
+    "WF-BEZIER-WIRES": {
+      kind: "placeholder",
+      title: "Bezier Network Wires",
+      placeholder: "Product clip coming soon",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Pragmatic Workflow Bezier wire routing in the Houdini Network Editor",
+      caption: ""
+    },
     "WF-HOTKEYS": {
       kind: "placeholder",
       title: "Context-Sensitive Rule-Based Hotkey System",
