@@ -1546,3 +1546,72 @@ body {
     width: 100%;
   }
 }
+
+
+/* Hard guarantee: never fall back to a serif face */
+:root {
+  --font-sans: "InterVariable", "Inter var", "Inter", Arial, Helvetica, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+html,
+body,
+body button,
+body input,
+body textarea,
+body select,
+body summary,
+body a,
+body h1,
+body h2,
+body h3,
+body h4,
+body p,
+body li,
+body span,
+body div {
+  font-family: var(--font-sans) !important;
+}
+
+.inline-draft,
+code,
+pre {
+  font-family: var(--font-mono) !important;
+}
+
+body {
+  font-variation-settings: "opsz" 14;
+  font-synthesis: none;
+}
+
+.hero h1 {
+  font-family: var(--font-sans) !important;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.feature-copy h2,
+.section-heading h2,
+.final-cta h2 {
+  font-family: var(--font-sans) !important;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.hero-lede {
+  font-family: var(--font-sans) !important;
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: clamp(46px, 12vw, 62px);
+    line-height: 1.04;
+  }
+
+  .hero-lede {
+    font-size: 17px;
+    line-height: 1.58;
+  }
+}
