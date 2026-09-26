@@ -34,7 +34,7 @@
     },
     "WF-PARAMETERS": {
       kind: "placeholder",
-      title: "High-Density Parameter Editor",
+      title: "High-Density Parameter Workspace",
       placeholder: "Product clip coming soon",
       imageSrc: "",
       videoSrc: "",
@@ -44,7 +44,7 @@
     },
     "WF-CODE": {
       kind: "placeholder",
-      title: "Code editing",
+      title: "Context-Aware IDE",
       placeholder: "VEX · OpenCL · Python · C++ clips coming soon",
       imageSrc: "",
       videoSrc: "",
@@ -74,7 +74,7 @@
     },
     "WF-PROFILER": {
       kind: "placeholder",
-      title: "Profiler",
+      title: "Advanced Performance Profiler",
       placeholder: "Product clip coming soon",
       imageSrc: "",
       videoSrc: "",
@@ -94,7 +94,7 @@
     },
     "WF-CUSTOMIZE": {
       kind: "placeholder",
-      title: "Production UX",
+      title: "Production Workflow",
       placeholder: "Production workflow image coming soon",
       imageSrc: "",
       videoSrc: "",
