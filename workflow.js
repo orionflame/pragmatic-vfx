@@ -84,7 +84,7 @@
     },
     "WF-HUD": {
       kind: "placeholder",
-      title: "Performance HUD",
+      title: "Resource Monitor",
       placeholder: "Product clip coming soon",
       imageSrc: "",
       videoSrc: "",
@@ -94,7 +94,7 @@
     },
     "WF-PLAYBAR": {
       kind: "placeholder",
-      title: "Playbar & Timeline Controls",
+      title: "Global Timeline Scrubbing",
       placeholder: "Product clip coming soon",
       imageSrc: "",
       videoSrc: "",
@@ -104,12 +104,12 @@
     },
     "WF-CUSTOMIZE": {
       kind: "placeholder",
-      title: "Personalization",
-      placeholder: "Settings image coming soon",
+      title: "Production UX",
+      placeholder: "Production workflow image coming soon",
       imageSrc: "",
       videoSrc: "",
       posterSrc: "",
-      alt: "Pragmatic Workflow personalization settings",
+      alt: "Pragmatic Workflow production-focused interface and interaction design",
       caption: ""
     }
   };
