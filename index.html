@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./workflow.css?v=20260926-2125">
+  <link rel="stylesheet" href="./workflow.css?v=20260926-2145">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -71,7 +71,7 @@
 
         <div class="feature-chapter" aria-label="CORE WORKFLOW">
           <p class="feature-chapter-label">CORE WORKFLOW</p>
-          <p class="feature-chapter-title">The parts of Houdini you touch constantly, rebuilt for faster technical work.</p>
+          <p class="feature-chapter-title">The everyday Houdini interactions where Pragmatic Workflow makes the biggest difference.</p>
         </div>
 
         <article class="feature-row feature-row-major">
@@ -79,8 +79,8 @@
             <p class="eyebrow">Parameter workflow</p>
             <h2>Advanced Parameter Workspace</h2>
             <p class="benefit-subheading">A redesigned parameter UX for complex Houdini work.</p>
-            <p class="feature-description">Workflow does not claim to invent Houdini parameters, folders, ramps, or multiparms. It changes how complex parameter interfaces are presented and operated: denser control-specific layouts, more deliberate grouping, compact path/string/menu treatments, configurable labels, collapsible structure, parameter-state feedback, and tighter control over typography and spacing.</p>
-            <p class="feature-description secondary-copy">The goal is a higher-information parameter workspace without reducing everything to tiny text. Related controls can stay visually grouped, layout density can be tuned to the display, and code-bearing parameters connect directly to Workflow's integrated language-intelligent development environment.</p>
+            <p class="feature-description">Pragmatic Workflow rebuilds the parameter-working experience around complex Houdini nodes: dense control-specific layouts, deliberate grouping, compact path/string/menu treatments, configurable labels, collapsible structure, parameter-state feedback, and fine control over typography and spacing.</p>
+            <p class="feature-description secondary-copy">The result is a higher-information workspace without reducing everything to tiny text. Related controls stay visually organized, density can be tuned to the display, and code-bearing parameters connect directly to Workflow's integrated language-intelligent development environment.</p>
             <div class="capability-pills">
               <span>Dense configurable layouts</span>
               <span>Control-specific UX</span>
@@ -101,8 +101,8 @@
           <div class="feature-copy">
             <p class="eyebrow">First-class development environment</p>
             <h2>IDE-Grade Development Environment for Houdini</h2>
-            <p class="benefit-subheading">Dedicated language services for VEX, OpenCL, Python, and C++ inside the parameter workflow.</p>
-            <p class="feature-description">Houdini already supports syntax highlighting, autocomplete in configured code fields, and external-editor workflows. Workflow's differentiator is the integrated language-service layer: completion, signature help, hover documentation, symbol navigation, API information, and Houdini-specific context directly in the editing surface.</p>
+            <p class="benefit-subheading">Dedicated language intelligence for VEX, OpenCL, Python, and C++ inside Houdini.</p>
+            <p class="feature-description">Workflow turns code-bearing parameters into a first-class development environment with completion, signature help, hover documentation, symbol navigation, API information, and Houdini-specific context directly in the editing surface.</p>
             <p class="feature-description secondary-copy">Each language is treated as its own development environment. VEX uses a dedicated language service instead of a generic C-like parser. OpenCL can understand Houdini binding context. Python works with HOM typing information. C++ connects to HDK, native build tooling, and the development environment. Monaco supplies the editing foundation, while Workflow supplies the Houdini-specific intelligence around it.</p>
             <div class="capability-pills">
               <span>Dedicated language services</span>
@@ -126,9 +126,9 @@
         <article class="feature-row">
           <div class="feature-copy">
             <p class="eyebrow">What did this node change?</p>
-            <h2>Node Info &amp; Geometry Change Tracking</h2>
+            <h2>Pragmatic Node Info &amp; Change Tracking</h2>
             <p class="benefit-subheading">See what a node created, modified, deleted, touched, and how its memory footprint changed.</p>
-            <p class="feature-description">Houdini's native node info already shows current geometry statistics, groups, and attributes. Workflow adds the input-relative layer: inspect a node against available input data and classify attributes and groups as created, modified, deleted, or unchanged where comparison data exists. Topology changes are surfaced separately from value-level changes.</p>
+            <p class="feature-description">Pragmatic Node Info turns quick node inspection into a change report. Compare against available input data to classify attributes and groups as created, modified, deleted, or unchanged, and surface topology changes separately so structural edits are immediately visible.</p>
             <p class="feature-description secondary-copy">Memory deltas show how much memory was added or removed, including per-item changes for attributes, groups, and VDBs. For VDB data, Node Info also exposes the relevant VDB state and touch information, including reported tree, metadata, or transform revisions. This turns MMB-style inspection into a focused answer to the question: <strong>what did this node actually touch?</strong></p>
             <div class="capability-pills">
               <span>Created / modified / deleted attributes</span>
@@ -148,60 +148,28 @@
           </figure>
         </article>
 
-        <div class="feature-chapter" aria-label="OPTIMIZE">
-          <p class="feature-chapter-label">OPTIMIZE</p>
-          <p class="feature-chapter-title">Understand where the cost is, then verify whether your changes actually improved it.</p>
-        </div>
-
-        <article class="feature-row">
+        <article class="feature-row feature-row-major reverse">
           <div class="feature-copy">
-            <p class="eyebrow">Deep performance analysis</p>
-            <h2>Advanced Performance Profiler</h2>
-            <p class="benefit-subheading">Turn Houdini performance data into a real investigation.</p>
-            <p class="feature-description">Houdini's Performance Monitor already records profiles, compares captures, filters by frame range, records thread/frame/memory statistics, and provides tree, list, and event-log views. Workflow builds additional analysis views on top of that native performance data rather than presenting those native capabilities as new.</p>
-            <p class="feature-description secondary-copy">The differentiated workflow is hotspot-oriented investigation with an event call tree, bottom-up caller analysis, flame graphs, direct node/path actions from recorded hotspots, and separate VEX program reports. These views are designed to make relationships in the captured work easier to trace from an expensive event back toward its recorded context.</p>
+            <p class="eyebrow">Programmable interaction</p>
+            <h2>Context-Sensitive Hotkey &amp; Action System</h2>
+            <p class="benefit-subheading">One key can resolve to different operations from the network context, modifiers, selection state, and your own Python logic.</p>
+            <p class="feature-description">Build rules around the current network context, Ctrl/Alt/Shift/Space modifiers, and whether something is selected. A single configured key can resolve to different operations across supported network types and working states instead of becoming another isolated shortcut to memorize.</p>
+            <p class="feature-description secondary-copy">Rules can execute your own Python functions or expressions with access to the originating event, run supported recipes and shelf tools, create operators, or open custom menus. Custom Python can inspect Houdini in more detail when the built-in conditions are not enough.</p>
             <div class="capability-pills">
-              <span>Hotspot-oriented analysis</span>
-              <span>Event call tree</span>
-              <span>Bottom-up callers</span>
-              <span>Event flame graphs</span>
-              <span>Recorded-node navigation</span>
-              <span>VEX program reports</span>
+              <span>Context rules</span>
+              <span>Modifier rules</span>
+              <span>Selection-state rules</span>
+              <span>Arbitrary Python calls</span>
+              <span>Recipes and shelf tools</span>
+              <span>Custom menus</span>
             </div>
-            <p class="feature-impact"><strong>From hotspot to cause.</strong> Workflow turns captured performance data into a structured profiling workspace for investigation. Event views represent captured event work rather than source-level CPU sampling, and Workflow does not claim to make Houdini faster merely by being installed.</p>
+            <p class="feature-impact">This is programmable interaction with Houdini, not merely a replacement shortcut list. ONE is optional; the Hotkey System also works in a normal Network Editor.</p>
           </div>
 
           <figure class="feature-media">
-            <div class="media-frame" data-media-slot="WF-PROFILER"></div>
+            <div class="media-frame" data-media-slot="WF-HOTKEYS"></div>
           </figure>
         </article>
-
-        <article class="feature-row reverse">
-          <div class="feature-copy">
-            <p class="eyebrow">System telemetry</p>
-            <h2>Resource Monitor</h2>
-            <p class="benefit-subheading">Live CPU, RAM, GPU, and VRAM telemetry in a customizable Houdini HUD.</p>
-            <p class="feature-description">Workflow's Resource Monitor displays system-level CPU, RAM, GPU, and VRAM readings directly in its HUD. This is a presentation layer for live resource telemetry, distinct from Houdini's event-oriented Performance Monitor and from commands such as <code>gpumem</code> that can report Houdini GPU-memory usage.</p>
-            <p class="feature-description secondary-copy">Choose Ring, Liquid, Radiant Liquid, Segmented Arc, Ribbon Sweep, or Thermal Bloom, then configure resource colors, typography, scale, spacing, opacity, and supported animation behavior. An optional cook timeline can show the cook activity observed by Workflow's notification hooks.</p>
-            <div class="capability-pills">
-              <span>CPU, RAM, GPU, VRAM</span>
-              <span>Six gauge styles</span>
-              <span>Optional cook timeline</span>
-              <span>Per-resource colors</span>
-              <span>Typography and layout controls</span>
-            </div>
-            <p class="feature-impact">Telemetry availability varies by hardware and platform. System-wide GPU and RAM readings are not exact per-node resource ownership.</p>
-          </div>
-
-          <figure class="feature-media">
-            <div class="media-frame" data-media-slot="WF-HUD"></div>
-          </figure>
-        </article>
-
-        <div class="feature-chapter" aria-label="WORKSPACE & AUTOMATION">
-          <p class="feature-chapter-label">WORKSPACE & AUTOMATION</p>
-          <p class="feature-chapter-title">Change how you navigate, invoke tools, control time, and arrange the Houdini workspace.</p>
-        </div>
 
         <article class="feature-row feature-row-major">
           <div class="feature-copy">
@@ -225,32 +193,60 @@
           </figure>
         </article>
 
-        <article class="feature-row feature-row-major reverse">
+        <div class="feature-chapter" aria-label="PERFORMANCE">
+          <p class="feature-chapter-label">PERFORMANCE</p>
+          <p class="feature-chapter-title">Watch system pressure day to day, then go deeper when a scene needs investigation.</p>
+        </div>
+
+        <article class="feature-row reverse">
           <div class="feature-copy">
-            <p class="eyebrow">Programmable interaction</p>
-            <h2>Programmable Hotkey &amp; Action Rules</h2>
-            <p class="benefit-subheading">Go beyond Houdini's native context bindings with user-authored decision rules.</p>
-            <p class="feature-description">Houdini already lets the same key resolve differently in different hotkey contexts. Workflow adds another rule layer that can branch on context, modifiers, and selected-versus-unselected state, so one configured key can resolve to different operations without pretending context sensitivity itself is new.</p>
-            <p class="feature-description secondary-copy">Rules can also execute your own Python functions or expressions with access to the originating event, run supported recipes and shelf tools, or open custom menus. Custom Python can inspect Houdini in more detail when the built-in rule conditions are not enough.</p>
+            <p class="eyebrow">System telemetry</p>
+            <h2>Resource Monitor</h2>
+            <p class="benefit-subheading">Live CPU, RAM, GPU, and VRAM telemetry in a customizable Houdini HUD.</p>
+            <p class="feature-description">Pragmatic Resource Monitor keeps live CPU, RAM, GPU, and VRAM telemetry visible in a compact Houdini HUD, giving you an immediate read on system pressure while you work.</p>
+            <p class="feature-description secondary-copy">Choose Ring, Liquid, Radiant Liquid, Segmented Arc, Ribbon Sweep, or Thermal Bloom, then configure resource colors, typography, scale, spacing, opacity, and supported animation behavior. An optional cook timeline can show the cook activity observed by Workflow's notification hooks.</p>
             <div class="capability-pills">
-              <span>Context rules</span>
-              <span>Modifier rules</span>
-              <span>Selection-state rules</span>
-              <span>Arbitrary Python calls</span>
-              <span>Recipes and shelf tools</span>
-              <span>Custom menus</span>
+              <span>CPU, RAM, GPU, VRAM</span>
+              <span>Six gauge styles</span>
+              <span>Optional cook timeline</span>
+              <span>Per-resource colors</span>
+              <span>Typography and layout controls</span>
             </div>
-            <p class="feature-impact">This is programmable interaction with Houdini, not merely a replacement shortcut list. ONE is optional; the Hotkey System also works in a normal Network Editor.</p>
+            <p class="feature-impact">Telemetry availability varies by hardware and platform. System-wide GPU and RAM readings are not exact per-node resource ownership.</p>
           </div>
 
           <figure class="feature-media">
-            <div class="media-frame" data-media-slot="WF-HOTKEYS"></div>
+            <div class="media-frame" data-media-slot="WF-HUD"></div>
           </figure>
         </article>
 
-        
+        <article class="feature-row">
+          <div class="feature-copy">
+            <p class="eyebrow">Deep performance analysis</p>
+            <h2>Advanced Performance Profiler</h2>
+            <p class="benefit-subheading">Turn Houdini performance data into a real investigation.</p>
+            <p class="feature-description">Pragmatic Workflow turns captured performance data into a deeper investigation workspace. Start from hotspots, then trace recorded work through an event call tree, bottom-up caller analysis, flame graphs, and direct node/path actions.</p>
+            <p class="feature-description secondary-copy">Separate VEX program reports add another layer for technical investigation. The goal is to move from “this is expensive” toward understanding how the recorded work relates, where it came from, and what to inspect next.</p>
+            <div class="capability-pills">
+              <span>Hotspot-oriented analysis</span>
+              <span>Event call tree</span>
+              <span>Bottom-up callers</span>
+              <span>Event flame graphs</span>
+              <span>Recorded-node navigation</span>
+              <span>VEX program reports</span>
+            </div>
+            <p class="feature-impact"><strong>From hotspot to cause.</strong> Workflow turns captured performance data into a structured profiling workspace for investigation. Event views represent captured event work rather than source-level CPU sampling, and Workflow does not claim to make Houdini faster merely by being installed.</p>
+          </div>
 
-        
+          <figure class="feature-media">
+            <div class="media-frame" data-media-slot="WF-PROFILER"></div>
+          </figure>
+        </article>
+
+        <div class="feature-chapter" aria-label="CONTROL">
+          <p class="feature-chapter-label">CONTROL</p>
+          <p class="feature-chapter-title">Keep time interaction accessible from the workspace.</p>
+        </div>
 
         <article class="feature-row">
           <div class="feature-copy">
@@ -295,7 +291,11 @@
             <div class="media-frame" data-media-slot="WF-HDK-SETUP"></div>
           </figure>
         </article>
-      </div>
+
+
+
+
+</div>
 
       <div class="explore-jump">
         <a class="text-link" href="#all-features">Explore the complete feature inventory ↓</a>
@@ -492,7 +492,7 @@
           </details>
 
           <details class="feature-group">
-            <summary>Programmable Hotkey &amp; Action Rules</summary>
+            <summary>Context-Sensitive Hotkey &amp; Action System</summary>
             <ul>
               <li>User-authored rules combining Houdini context, modifiers, and selected/unselected state</li>
               <li>Additional logic through arbitrary Python functions or expressions with event context</li>
@@ -631,7 +631,7 @@
 
           <details class="faq-item">
             <summary>What is included with Workflow?</summary>
-            <p>Workflow includes the workspace systems described on this page: Overlay Network Editor, Programmable Hotkey &amp; Action Rules, Advanced Parameter Workspace, IDE-Grade Development Environment for Houdini, Native C++ and HDK Development, Node Info and Geometry Change Tracking, Advanced Performance Profiler, Resource Monitor, Overlay Network Editor, Programmable Hotkey &amp; Action Rules, Global Timeline Scrubbing, and their verified supporting controls. Pragmatic Operators is a separate product.</p>
+            <p>Workflow includes the workspace systems described on this page: Overlay Network Editor, Context-Sensitive Hotkey &amp; Action System, Advanced Parameter Workspace, IDE-Grade Development Environment for Houdini, Native C++ and HDK Development, Pragmatic Node Info and Change Tracking, Advanced Performance Profiler, Resource Monitor, Overlay Network Editor, Context-Sensitive Hotkey &amp; Action System, Global Timeline Scrubbing, and their verified supporting controls. Pragmatic Operators is a separate product.</p>
           </details>
 
           <details class="faq-item">
@@ -677,6 +677,6 @@
     </div>
   </footer>
 
-  <script src="./workflow.js?v=20260926-2125"></script>
+  <script src="./workflow.js?v=20260926-2145"></script>
 </body>
 </html>
