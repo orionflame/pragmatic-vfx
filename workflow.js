@@ -348,8 +348,8 @@
           contact.textContent = custom ? "Contact Sales" : "Contact us";
           const subject = encodeURIComponent(
             custom
-              ? "Pragmatic Workflow Studio Licensing - 21+ seats"
-              : "Pragmatic Workflow Studio Licensing - " + (tier.dataset.label || "")
+              ? "Pragmatic Workflow Company Licensing - 51+ seats"
+              : "Pragmatic Workflow Company Licensing - " + (tier.dataset.label || "")
           );
           contact.href = "mailto:animatrix2k7@gmail.com?subject=" + subject;
         }
