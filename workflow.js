@@ -92,16 +92,6 @@
       alt: "Customizable CPU, RAM, GPU and VRAM performance gauges",
       caption: ""
     },
-    "WF-PLAYBAR": {
-      kind: "placeholder",
-      title: "Global Timeline Scrubbing",
-      placeholder: "Product clip coming soon",
-      imageSrc: "",
-      videoSrc: "",
-      posterSrc: "",
-      alt: "Compact Houdini playback and timeline controls",
-      caption: ""
-    },
     "WF-CUSTOMIZE": {
       kind: "placeholder",
       title: "Production UX",
