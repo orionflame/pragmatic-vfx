@@ -1641,3 +1641,20 @@ body {
     font-weight: 600;
   }
 }
+
+
+/* Major product feature titles need stronger visual authority */
+.feature-copy h2 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.06;
+}
+
+@media (max-width: 640px) {
+  .feature-copy h2 {
+    font-size: clamp(38px, 10.8vw, 50px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.028em;
+  }
+}
