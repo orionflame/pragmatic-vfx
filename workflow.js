@@ -72,16 +72,6 @@
       alt: "Node Info showing geometry and volume information",
       caption: ""
     },
-    "WF-SPREADSHEET": {
-      kind: "placeholder",
-      title: "Spreadsheet",
-      placeholder: "Product clip coming soon",
-      imageSrc: "",
-      videoSrc: "",
-      posterSrc: "",
-      alt: "Pragmatic Workflow Spreadsheet inspecting Houdini geometry data",
-      caption: ""
-    },
     "WF-PROFILER": {
       kind: "placeholder",
       title: "Profiler",
