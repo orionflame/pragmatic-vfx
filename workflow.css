@@ -1658,3 +1658,19 @@ body {
     letter-spacing: -0.028em;
   }
 }
+
+
+/* Hero title should carry at least the same visual authority as feature titles */
+.hero h1 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.06;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-weight: 700;
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+  }
+}
