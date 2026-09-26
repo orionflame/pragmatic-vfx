@@ -327,6 +327,7 @@
     const price = document.querySelector("[data-studio-price]");
     const label = document.querySelector("[data-studio-label]");
     const detail = document.querySelector("[data-studio-detail]");
+    const renewal = document.querySelector("[data-studio-renewal]");
     const checkout = document.querySelector("[data-studio-checkout]");
     const contact = document.querySelector("[data-studio-contact]");
 
@@ -341,6 +342,7 @@
         if (price) price.textContent = tier.dataset.price || "";
         if (label) label.textContent = tier.dataset.label || "";
         if (detail) detail.textContent = tier.dataset.detail || "";
+        if (renewal) renewal.textContent = tier.dataset.renewal || "";
 
         const custom = tier.dataset.studioTier === "custom";
         if (checkout) checkout.hidden = custom;
