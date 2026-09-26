@@ -403,26 +403,27 @@
         <div class="section-heading">
           <p class="eyebrow">Licensing</p>
           <h2>Bring Workflow into your everyday Houdini work.</h2>
-          <p>Choose the license that fits how you work. Individual licenses are for one named artist. Studio licensing uses floating concurrent seats for teams.</p>
+          <p>Choose who is buying: Indie Artist, FX Artist, or Company. Individual licenses are for one named artist; Company licensing uses floating concurrent seats and starts at the 1–5 tier.</p>
         </div>
 
-        <div class="pricing-switch" role="tablist" aria-label="License type">
-          <button class="pricing-switch-button active" type="button" role="tab" aria-selected="true" aria-controls="pricing-individual" id="tab-individual" data-pricing-tab="individual">Individual</button>
-          <button class="pricing-switch-button" type="button" role="tab" aria-selected="false" aria-controls="pricing-studio" id="tab-studio" data-pricing-tab="studio">Studio</button>
+        <div class="pricing-switch" role="tablist" aria-label="Buyer type">
+          <button class="pricing-switch-button active" type="button" role="tab" aria-selected="true" aria-controls="pricing-indie" id="tab-indie" data-pricing-tab="indie">Indie Artist</button>
+          <button class="pricing-switch-button" type="button" role="tab" aria-selected="false" aria-controls="pricing-fx" id="tab-fx" data-pricing-tab="fx">FX Artist</button>
+          <button class="pricing-switch-button" type="button" role="tab" aria-selected="false" aria-controls="pricing-company" id="tab-company" data-pricing-tab="company">Company</button>
         </div>
 
-        <div id="pricing-individual" class="pricing-panel" role="tabpanel" aria-labelledby="tab-individual" data-pricing-panel="individual">
+        <div id="pricing-indie" class="pricing-panel pricing-panel-single" role="tabpanel" aria-labelledby="tab-indie" data-pricing-panel="indie">
           <div class="pricing-grid">
-            <article class="price-card">
+            <article class="price-card featured-price-card">
               <div class="price-card-top">
                 <div>
-                  <h3>Indie Individual</h3>
-                  <p class="price-audience">For one named artist using the Indie tier.</p>
+                  <h3>Workflow Indie Individual</h3>
+                  <p class="price-audience">For a solo Indie artist. One named user.</p>
                 </div>
               </div>
               <div class="price">
                 <strong>$149</strong>
-                <span>USD · first year</span>
+                <span>USD · Year 1</span>
               </div>
               <p class="renewal">$129 active renewal</p>
               <ul class="license-list">
@@ -435,17 +436,21 @@
               </ul>
               <button class="button button-primary button-disabled" type="button" disabled data-checkout-token="{{CHECKOUT_URL_WORKFLOW_INDIE}}">Checkout URL pending</button>
             </article>
+          </div>
+        </div>
 
+        <div id="pricing-fx" class="pricing-panel pricing-panel-single" role="tabpanel" aria-labelledby="tab-fx" data-pricing-panel="fx" hidden>
+          <div class="pricing-grid">
             <article class="price-card featured-price-card">
               <div class="price-card-top">
                 <div>
-                  <h3>FX Individual</h3>
-                  <p class="price-audience">For one named artist using the FX tier.</p>
+                  <h3>Workflow FX Individual</h3>
+                  <p class="price-audience">For a solo freelancer or individual FX artist. One named user.</p>
                 </div>
               </div>
               <div class="price">
                 <strong>$299</strong>
-                <span>USD · first year</span>
+                <span>USD · Year 1</span>
               </div>
               <p class="renewal">$249 active renewal</p>
               <ul class="license-list">
@@ -461,37 +466,36 @@
           </div>
         </div>
 
-        <div id="pricing-studio" class="pricing-panel" role="tabpanel" aria-labelledby="tab-studio" data-pricing-panel="studio" hidden>
+        <div id="pricing-company" class="pricing-panel" role="tabpanel" aria-labelledby="tab-company" data-pricing-panel="company" hidden>
           <article class="studio-pricing-card">
             <div class="studio-pricing-header">
               <div>
-                <p class="eyebrow">Floating concurrent licensing</p>
+                <p class="eyebrow">Company licensing</p>
                 <h3>Pragmatic Workflow Studio</h3>
-                <p>Choose the maximum number of simultaneous Workflow users. Studio seats are concurrent, so the product can be deployed across a team while usage is limited by the purchased seat pool.</p>
+                <p>Company licenses use floating concurrent seats. A company purchasing for even one employee starts at the 1–5 tier; FX Individual is for solo freelancers and individual artists.</p>
               </div>
             </div>
 
-            <div class="studio-tier-selector" role="tablist" aria-label="Studio concurrent seat tier">
-              <button type="button" class="studio-tier active" data-studio-tier="1-5" data-price="Pricing pending" data-label="1–5 concurrent seats" data-detail="The minimum Studio tier, for teams needing up to five simultaneous Workflow users." aria-selected="true">1–5</button>
-              <button type="button" class="studio-tier" data-studio-tier="6-10" data-price="Pricing pending" data-label="6–10 concurrent seats" data-detail="For teams needing up to ten simultaneous Workflow users." aria-selected="false">6–10</button>
-              <button type="button" class="studio-tier" data-studio-tier="11-20" data-price="Pricing pending" data-label="11–20 concurrent seats" data-detail="For teams needing up to twenty simultaneous Workflow users." aria-selected="false">11–20</button>
-              <button type="button" class="studio-tier" data-studio-tier="21-50" data-price="Pricing pending" data-label="21–50 concurrent seats" data-detail="For larger studios needing up to fifty simultaneous Workflow users." aria-selected="false">21–50</button>
-              <button type="button" class="studio-tier" data-studio-tier="custom" data-price="Custom" data-label="51+ concurrent seats" data-detail="For larger deployments and enterprise agreements." aria-selected="false">51+</button>
+            <div class="studio-tier-selector" role="tablist" aria-label="Company concurrent seat tier">
+              <button type="button" class="studio-tier active" data-studio-tier="1-5" data-price="TBD" data-label="Studio 1–5" data-detail="Up to 5 concurrent seats. This is the minimum Company tier." aria-selected="true">1–5</button>
+              <button type="button" class="studio-tier" data-studio-tier="6-10" data-price="TBD" data-label="Studio 6–10" data-detail="Up to 10 concurrent seats." aria-selected="false">6–10</button>
+              <button type="button" class="studio-tier" data-studio-tier="11-20" data-price="TBD" data-label="Studio 11–20" data-detail="Up to 20 concurrent seats." aria-selected="false">11–20</button>
+              <button type="button" class="studio-tier" data-studio-tier="21-50" data-price="TBD" data-label="Studio 21–50" data-detail="Up to 50 concurrent seats." aria-selected="false">21–50</button>
+              <button type="button" class="studio-tier" data-studio-tier="custom" data-price="Contact" data-label="Enterprise 51+" data-detail="Custom concurrent-seat licensing for larger deployments." aria-selected="false">51+</button>
             </div>
 
             <div class="studio-pricing-body">
               <div class="studio-price-copy">
-                <p class="studio-tier-label" data-studio-label>1–5 concurrent seats</p>
-                <div class="studio-price" data-studio-price>Pricing pending</div>
-                <p class="studio-tier-detail" data-studio-detail>The minimum Studio tier, for teams needing up to five simultaneous Workflow users.</p>
-                <p class="studio-license-note">Includes 12 months of update coverage. Eligible releases remain usable permanently.</p>
+                <p class="studio-tier-label" data-studio-label>Studio 1–5</p>
+                <div class="studio-price" data-studio-price>TBD</div>
+                <p class="studio-tier-detail" data-studio-detail>Up to 5 concurrent seats. This is the minimum Company tier.</p>
+                <p class="studio-license-note">Standalone Workflow Studio Year 1 and renewal pricing are intentionally still TBD.</p>
               </div>
 
               <ul class="license-list studio-license-list">
                 <li>Floating concurrent seat pool</li>
                 <li>Pragmatic Workflow tools</li>
-                <li>Deploy across studio workstations</li>
-                <li>Studio minimum: 1–5 concurrent seats</li>
+                <li>Company licensing begins at Studio 1–5</li>
                 <li>Concurrent use limited to purchased tier</li>
                 <li>12 months of update coverage</li>
                 <li>Perpetual use of eligible releases</li>
@@ -499,8 +503,8 @@
             </div>
 
             <div class="studio-actions">
-              <button class="button button-primary button-disabled" type="button" disabled data-studio-checkout>Studio checkout pending</button>
-              <a class="button" href="mailto:animatrix2k7@gmail.com?subject=Pragmatic%20Workflow%20Studio%20Licensing" data-studio-contact>Contact us</a>
+              <button class="button button-primary button-disabled" type="button" disabled data-studio-checkout>Studio pricing pending</button>
+              <a class="button" href="mailto:animatrix2k7@gmail.com?subject=Pragmatic%20Workflow%20Company%20Licensing" data-studio-contact>Contact us</a>
             </div>
           </article>
         </div>
