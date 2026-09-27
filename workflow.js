@@ -132,6 +132,16 @@
       alt: "Concept for persistent graph probes and branch experiments",
       caption: ""
     },
+    "WF-HIERARCHY-ZOOM": {
+      kind: "placeholder",
+      title: "Continuous Hierarchy Zoom · In development",
+      placeholder: "Concept demonstration coming later",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Concept for continuous hierarchy zoom and HDA X-Ray in Pragmatic Workflow",
+      caption: ""
+    },
     "WF-CUSTOMIZE": {
       kind: "placeholder",
       title: "Production Workflow",
