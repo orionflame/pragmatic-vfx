@@ -102,6 +102,36 @@
       alt: "Customizable CPU, RAM, GPU and VRAM performance gauges",
       caption: ""
     },
+    "WF-GRAPH-LENSES": {
+      kind: "placeholder",
+      title: "Graph Lenses · In development",
+      placeholder: "Concept demonstration coming later",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Concept for non-destructive Graph Lenses in Pragmatic Workflow",
+      caption: ""
+    },
+    "WF-GRAPH-DIFF": {
+      kind: "placeholder",
+      title: "Visual Graph Diffing · In development",
+      placeholder: "Concept demonstration coming later",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Concept for visually comparing two Houdini graph states",
+      caption: ""
+    },
+    "WF-GRAPH-PROBES": {
+      kind: "placeholder",
+      title: "Persistent Probes & Branch Experiments · In development",
+      placeholder: "Concept demonstration coming later",
+      imageSrc: "",
+      videoSrc: "",
+      posterSrc: "",
+      alt: "Concept for persistent graph probes and branch experiments",
+      caption: ""
+    },
     "WF-CUSTOMIZE": {
       kind: "placeholder",
       title: "Production Workflow",
