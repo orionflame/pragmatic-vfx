@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./workflow.css?v=20260927-1715">
+  <link rel="stylesheet" href="./workflow.css?v=20260927-1735">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -69,12 +69,12 @@
     <section class="feature-list" id="features" aria-label="Workflow feature highlights">
       <div class="shell">
 
-        <div class="feature-chapter" aria-label="CORE WORKFLOW">
-          <p class="feature-chapter-label">CORE WORKFLOW</p>
-          <p class="feature-chapter-title">Augment the parts of Houdini you touch hundreds of times a day.</p>
+        <div class="feature-chapter" aria-label="HIGH IMPACT">
+          <p class="feature-chapter-label">HIGH IMPACT</p>
+          <p class="feature-chapter-title">Start with the systems most likely to change how almost every Houdini artist works.</p>
         </div>
 
-                        <article class="feature-row feature-row-major">
+<article class="feature-row feature-row-major">
           <div class="feature-copy">
             <p class="eyebrow">Fluid parameter work</p>
             <h2>High-Density Parameter Workspace</h2>
@@ -98,7 +98,71 @@
           </figure>
         </article>
 
-                        <article class="feature-row feature-row-major reverse">
+<article class="feature-row feature-row-major future-feature">
+          <div class="feature-copy">
+            <p class="eyebrow">In development · Network understanding</p>
+            <h2>Graph Lenses</h2>
+            <p class="benefit-subheading">Ask a different question of the same graph without changing the graph.</p>
+            <p class="feature-description">Graph Lenses are designed as non-destructive views over the same Houdini graph. Switch the network from its normal presentation into focused views for structure, data relationships, memory, changes, or recorded cook evidence while preserving the underlying nodes and connections.</p>
+            <p class="feature-description secondary-copy">A lens can collapse irrelevant branches, surface nested HDA relationships, expose indirect dependencies, or emphasize the parts of a graph relevant to the question you are asking. Recorded-cook views would use captured performance evidence where available rather than pretending to reconstruct an exact live execution path.</p>
+            <div class="capability-pills">
+              <span>Structure lens</span>
+              <span>Data lens</span>
+              <span>Memory lens</span>
+              <span>Change lens</span>
+              <span>Recorded-cook lens</span>
+              <span>Semantic zoom</span>
+            </div>
+          </div>
+
+          <figure class="feature-media">
+            <div class="media-frame" data-media-slot="WF-GRAPH-LENSES"></div>
+          </figure>
+        </article>
+
+<article class="feature-row reverse feature-row-major future-feature">
+          <div class="feature-copy">
+            <p class="eyebrow">In development · Change review</p>
+            <h2>Visual Graph Diffing</h2>
+            <p class="benefit-subheading">Compare two network states the way developers compare code.</p>
+            <p class="feature-description">Graph Diffing is aimed at making structural Houdini changes reviewable at a glance: nodes created or removed, connections changed, parameters edited, and branches reorganized between two states.</p>
+            <p class="feature-description secondary-copy">The goal is to make HDA iteration, branch experiments, version reviews, and regression debugging easier to reason about without manually scanning two nearly identical networks.</p>
+            <div class="capability-pills">
+              <span>Added / removed nodes</span>
+              <span>Connection changes</span>
+              <span>Parameter changes</span>
+              <span>Branch comparison</span>
+              <span>Version review</span>
+            </div>
+          </div>
+
+          <figure class="feature-media">
+            <div class="media-frame" data-media-slot="WF-GRAPH-DIFF"></div>
+          </figure>
+        </article>
+
+        <article class="feature-row future-feature">
+          <div class="feature-copy">
+            <p class="eyebrow">In development · Hierarchy navigation</p>
+            <h2>Continuous Hierarchy Zoom</h2>
+            <p class="benefit-subheading">Move through nested networks without repeatedly diving in, backing out, and rebuilding your mental map.</p>
+            <p class="feature-description">Continuous Hierarchy Zoom is designed to make network depth feel spatial instead of modal. Zoom toward an HDA or subnet to reveal its internal graph, keep moving through deeper levels, then zoom back out to recover the larger structure without losing context.</p>
+            <p class="feature-description secondary-copy">An HDA X-Ray mode can expose internal relationships without forcing a full dive into the asset, making it easier to understand where a connection goes, how nested systems relate, and what part of a large asset you are actually looking at.</p>
+            <div class="capability-pills">
+              <span>Continuous network zoom</span>
+              <span>Inline HDA expansion</span>
+              <span>HDA X-Ray</span>
+              <span>Nested context preservation</span>
+              <span>Semantic zoom</span>
+            </div>
+          </div>
+
+          <figure class="feature-media">
+            <div class="media-frame" data-media-slot="WF-HIERARCHY-ZOOM"></div>
+          </figure>
+        </article>
+
+<article class="feature-row feature-row-major reverse">
           <div class="feature-copy">
             <p class="eyebrow">Technical development</p>
             <h2>Context-Aware IDE</h2>
@@ -121,7 +185,7 @@
           </figure>
         </article>
 
-                        <article class="feature-row">
+<article class="feature-row">
           <div class="feature-copy">
             <p class="eyebrow">Smarter middle-click</p>
             <h2>Pragmatic Node Info</h2>
@@ -145,7 +209,7 @@
           </figure>
         </article>
 
-                        <article class="feature-row feature-row-major reverse">
+<article class="feature-row feature-row-major reverse">
           <div class="feature-copy">
             <p class="eyebrow">Stop burning one shortcut per command</p>
             <h2>Context-Aware Action System</h2>
@@ -168,55 +232,12 @@
           </figure>
         </article>
 
-                        <article class="feature-row feature-row-major">
-          <div class="feature-copy">
-            <p class="eyebrow">Flame-style edit / result loop</p>
-            <h2>Overlay Network Editor (ONE)</h2>
-            <p class="benefit-subheading">Edit the graph over the result.</p>
-            <p class="feature-description">Traditional pane layouts divide screen space between the network and the viewport. ONE layers the Network Editor directly over the 3D view, so both can use the same working area. Edit the graph and evaluate the result underneath it without repeatedly moving between separate visual zones.</p>
-            <p class="feature-description secondary-copy">Run fullscreen, keep a large viewport, overlay the graph, and keep the Parameter Workspace nearby for a compact Flame-inspired production loop. Adjust the network opacity, reveal or hide it quickly, and reclaim useful screen area on anything from a laptop to a large workstation display.</p>
-            <div class="capability-pills">
-              <span>Network over viewport</span>
-              <span>Shared screen area</span>
-              <span>Fullscreen workflow</span>
-              <span>Adjustable opacity</span>
-              <span>Quick reveal / hide</span>
-              <span>Parameter Workspace pairing</span>
-            </div>
-          </div>
-
-          <figure class="feature-media">
-            <div class="media-frame" data-media-slot="WF-NETWORK"></div>
-          </figure>
-        </article>
-
-                <article class="feature-row reverse">
-          <div class="feature-copy">
-            <p class="eyebrow">A classic returns</p>
-            <h2>Bezier Network Wires</h2>
-            <p class="benefit-subheading">A classic network language, brought back with a modern implementation.</p>
-            <p class="feature-description">Houdini once offered true Bezier wire routing. Workflow restores that continuous curve language in the modern Network Editor with its own implementation.</p>
-            <p class="feature-description secondary-copy">Long connections read as flowing paths instead of rigid straight segments or rounded elbows. On dense graphs, the curves make branch direction easier to follow while bringing back a network style many Houdini artists still prefer.</p>
-            <div class="capability-pills">
-              <span>True Bezier routing</span>
-              <span>Custom implementation</span>
-              <span>Smooth continuous paths</span>
-              <span>Dense-graph readability</span>
-              <span>Classic Houdini feel</span>
-            </div>
-          </div>
-
-          <figure class="feature-media">
-            <div class="media-frame" data-media-slot="WF-BEZIER-WIRES"></div>
-          </figure>
-        </article>
-
-        <div class="feature-chapter" aria-label="PERFORMANCE">
-          <p class="feature-chapter-label">PERFORMANCE</p>
-          <p class="feature-chapter-title">Keep hardware pressure visible during everyday work, then switch to detailed profiling when a scene needs investigation.</p>
+        <div class="feature-chapter" aria-label="OBSERVABILITY">
+          <p class="feature-chapter-label">OBSERVABILITY</p>
+          <p class="feature-chapter-title">Keep system state visible, then investigate deeper when something looks wrong or expensive.</p>
         </div>
 
-                        <article class="feature-row reverse">
+<article class="feature-row reverse">
           <div class="feature-copy">
             <p class="eyebrow">Hardware pressure in peripheral vision</p>
             <h2>Resource Monitor</h2>
@@ -239,7 +260,7 @@
           </figure>
         </article>
 
-                        <article class="feature-row">
+<article class="feature-row">
           <div class="feature-copy">
             <p class="eyebrow">Follow the expensive work</p>
             <h2>Advanced Performance Profiler</h2>
@@ -262,16 +283,60 @@
           </figure>
         </article>
 
-        
-
-        
-
-        <div class="feature-chapter" aria-label="NATIVE DEVELOPMENT">
-          <p class="feature-chapter-label">NATIVE DEVELOPMENT</p>
-          <p class="feature-chapter-title">Set up and verify native C++ and HDK development when the work calls for it.</p>
+        <div class="feature-chapter" aria-label="NETWORK ERGONOMICS">
+          <p class="feature-chapter-label">NETWORK ERGONOMICS</p>
+          <p class="feature-chapter-title">Optional ways to make the Network Editor itself feel better to use.</p>
         </div>
 
-                        <article class="feature-row reverse feature-row-major">
+<article class="feature-row reverse">
+          <div class="feature-copy">
+            <p class="eyebrow">A classic returns</p>
+            <h2>Bezier Network Wires</h2>
+            <p class="benefit-subheading">A classic network language, brought back with a modern implementation.</p>
+            <p class="feature-description">Houdini once offered true Bezier wire routing. Workflow restores that continuous curve language in the modern Network Editor with its own implementation.</p>
+            <p class="feature-description secondary-copy">Long connections read as flowing paths instead of rigid straight segments or rounded elbows. On dense graphs, the curves make branch direction easier to follow while bringing back a network style many Houdini artists still prefer.</p>
+            <div class="capability-pills">
+              <span>True Bezier routing</span>
+              <span>Custom implementation</span>
+              <span>Smooth continuous paths</span>
+              <span>Dense-graph readability</span>
+              <span>Classic Houdini feel</span>
+            </div>
+          </div>
+
+          <figure class="feature-media">
+            <div class="media-frame" data-media-slot="WF-BEZIER-WIRES"></div>
+          </figure>
+        </article>
+
+<article class="feature-row feature-row-major">
+          <div class="feature-copy">
+            <p class="eyebrow">Flame-style edit / result loop</p>
+            <h2>Overlay Network Editor (ONE)</h2>
+            <p class="benefit-subheading">Edit the graph over the result.</p>
+            <p class="feature-description">Traditional pane layouts divide screen space between the network and the viewport. ONE layers the Network Editor directly over the 3D view, so both can use the same working area. Edit the graph and evaluate the result underneath it without repeatedly moving between separate visual zones.</p>
+            <p class="feature-description secondary-copy">Run fullscreen, keep a large viewport, overlay the graph, and keep the Parameter Workspace nearby for a compact Flame-inspired production loop. Adjust the network opacity, reveal or hide it quickly, and reclaim useful screen area on anything from a laptop to a large workstation display.</p>
+            <div class="capability-pills">
+              <span>Network over viewport</span>
+              <span>Shared screen area</span>
+              <span>Fullscreen workflow</span>
+              <span>Adjustable opacity</span>
+              <span>Quick reveal / hide</span>
+              <span>Parameter Workspace pairing</span>
+            </div>
+          </div>
+
+          <figure class="feature-media">
+            <div class="media-frame" data-media-slot="WF-NETWORK"></div>
+          </figure>
+        </article>
+
+        <div class="feature-chapter" aria-label="SPECIALIST DEVELOPMENT">
+          <p class="feature-chapter-label">SPECIALIST DEVELOPMENT</p>
+          <p class="feature-chapter-title">Deeper tooling for artists and TDs who work close to Houdini's native development layer.</p>
+        </div>
+
+<article class="feature-row reverse feature-row-major">
           <div class="feature-copy">
             <p class="eyebrow">Native development</p>
             <h2>C++ &amp; HDK Development</h2>
@@ -292,9 +357,61 @@
           </figure>
         </article>
 
+        <div class="feature-chapter" aria-label="NEXT WAVE">
+          <p class="feature-chapter-label">NEXT WAVE · IN DEVELOPMENT</p>
+          <p class="feature-chapter-title">More broadly useful graph ideas under active design.</p>
+        </div>
 
+<article class="feature-row future-feature">
+          <div class="feature-copy">
+            <p class="eyebrow">In development · Investigation</p>
+            <h2>Persistent Probes &amp; Branch Experiments</h2>
+            <p class="benefit-subheading">Keep questions attached to the graph while you try another approach.</p>
+            <p class="feature-description">The planned probe system keeps selected data, diagnostics, or history attached to points in the network so an investigation survives beyond one click or one pane. Branch experiments extend that idea by making alternate approaches easier to duplicate, compare, and revisit.</p>
+            <p class="feature-description secondary-copy">Together with Graph Lenses and Graph Diffing, the goal is a Network Editor that helps reason about the graph, not just draw it.</p>
+            <div class="capability-pills">
+              <span>Persistent probes</span>
+              <span>Retained history</span>
+              <span>Branch experiments</span>
+              <span>Side-by-side reasoning</span>
+            </div>
+          </div>
 
+          <figure class="feature-media">
+            <div class="media-frame" data-media-slot="WF-GRAPH-PROBES"></div>
+          </figure>
+        </article>
 
+        <article class="feature-row future-feature">
+          <div class="feature-copy">
+            <p class="eyebrow">In development · Control evaluation</p>
+            <h2>Cook Gate &amp; Freeze Region</h2>
+            <p class="benefit-subheading">Experiment on one part of a network without constantly paying for everything downstream.</p>
+            <p class="feature-description">Cook Gate is designed to make temporary evaluation boundaries explicit in the graph. Freeze a known-good region, work on the branch you care about, and reopen the gate when you are ready to evaluate the larger dependency chain again.</p>
+            <p class="feature-description secondary-copy">The goal is safer, more deliberate iteration on expensive networks without turning manual bypassing, caching, and branch management into a separate debugging task.</p>
+            <div class="capability-pills">
+              <span>Temporary cook boundaries</span>
+              <span>Freeze known-good regions</span>
+              <span>Focused branch iteration</span>
+              <span>Explicit evaluation control</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-row reverse future-feature">
+          <div class="feature-copy">
+            <p class="eyebrow">In development · Hidden relationships</p>
+            <h2>Reference Lens &amp; Connect to Bookmark</h2>
+            <p class="benefit-subheading">Make indirect dependencies visible and make long-distance graph work easier to navigate.</p>
+            <p class="feature-description">Reference Lens is designed to expose parameter references, indirect dependencies, and other relationships that are real but not represented by ordinary network wires. Connect to Bookmark complements that by making distant graph locations explicit destinations instead of coordinates you have to remember.</p>
+            <div class="capability-pills">
+              <span>Reference visibility</span>
+              <span>Indirect dependencies</span>
+              <span>Named graph destinations</span>
+              <span>Long-distance navigation</span>
+            </div>
+          </div>
+        </article>
 </div>
 
       <div class="explore-jump">
@@ -333,79 +450,6 @@
       </div>
     </section>
 
-    <section class="future-section" id="in-development">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="eyebrow">In development</p>
-          <h2>The graph itself is next.</h2>
-          <p>These are active design directions for Workflow, not shipping claims yet. They extend the same augmentation idea deeper into how large Houdini networks are understood, compared, and explored.</p>
-        </div>
-
-        <article class="feature-row future-feature">
-          <div class="feature-copy">
-            <p class="eyebrow">In development · Network understanding</p>
-            <h2>Graph Lenses</h2>
-            <p class="benefit-subheading">Change what the network emphasizes without changing the network.</p>
-            <p class="feature-description">Graph Lenses are designed as non-destructive views over the same Houdini graph. Switch the network from its normal presentation into focused views for structure, data relationships, memory, changes, or recorded cook evidence while preserving the underlying nodes and connections.</p>
-            <p class="feature-description secondary-copy">A lens can collapse irrelevant branches, surface nested HDA relationships, expose indirect dependencies, or emphasize the parts of a graph relevant to the question you are asking. Recorded-cook views would use captured performance evidence where available rather than pretending to reconstruct an exact live execution path.</p>
-            <div class="capability-pills">
-              <span>Structure lens</span>
-              <span>Data lens</span>
-              <span>Memory lens</span>
-              <span>Change lens</span>
-              <span>Recorded-cook lens</span>
-              <span>Semantic zoom</span>
-            </div>
-          </div>
-
-          <figure class="feature-media">
-            <div class="media-frame" data-media-slot="WF-GRAPH-LENSES"></div>
-          </figure>
-        </article>
-
-        <article class="feature-row reverse future-feature">
-          <div class="feature-copy">
-            <p class="eyebrow">In development · Change review</p>
-            <h2>Visual Graph Diffing</h2>
-            <p class="benefit-subheading">Compare two network states the way developers compare code.</p>
-            <p class="feature-description">Graph Diffing is aimed at making structural Houdini changes reviewable at a glance: nodes created or removed, connections changed, parameters edited, and branches reorganized between two states.</p>
-            <p class="feature-description secondary-copy">The goal is to make HDA iteration, branch experiments, version reviews, and regression debugging easier to reason about without manually scanning two nearly identical networks.</p>
-            <div class="capability-pills">
-              <span>Added / removed nodes</span>
-              <span>Connection changes</span>
-              <span>Parameter changes</span>
-              <span>Branch comparison</span>
-              <span>Version review</span>
-            </div>
-          </div>
-
-          <figure class="feature-media">
-            <div class="media-frame" data-media-slot="WF-GRAPH-DIFF"></div>
-          </figure>
-        </article>
-
-        <article class="feature-row future-feature">
-          <div class="feature-copy">
-            <p class="eyebrow">In development · Investigation</p>
-            <h2>Persistent Probes &amp; Branch Experiments</h2>
-            <p class="benefit-subheading">Keep questions attached to the graph while you try another approach.</p>
-            <p class="feature-description">The planned probe system keeps selected data, diagnostics, or history attached to points in the network so an investigation survives beyond one click or one pane. Branch experiments extend that idea by making alternate approaches easier to duplicate, compare, and revisit.</p>
-            <p class="feature-description secondary-copy">Together with Graph Lenses and Graph Diffing, the goal is a Network Editor that helps reason about the graph, not just draw it.</p>
-            <div class="capability-pills">
-              <span>Persistent probes</span>
-              <span>Retained history</span>
-              <span>Branch experiments</span>
-              <span>Side-by-side reasoning</span>
-            </div>
-          </div>
-
-          <figure class="feature-media">
-            <div class="media-frame" data-media-slot="WF-GRAPH-PROBES"></div>
-          </figure>
-        </article>
-      </div>
-    </section>
-
     <section class="pricing" id="pricing">
       <div class="shell">
         <div class="section-heading">
@@ -430,10 +474,10 @@
                 </div>
               </div>
               <div class="price">
-                <strong>$149</strong>
+                <strong>$199</strong>
                 <span>USD · Year 1</span>
               </div>
-              <p class="renewal">$129 active renewal</p>
+              <p class="renewal">$169 active renewal</p>
               <ul class="license-list">
                 <li>Pragmatic Workflow tools</li>
                 <li>One named user</li>
@@ -457,10 +501,10 @@
                 </div>
               </div>
               <div class="price">
-                <strong>$299</strong>
+                <strong>$399</strong>
                 <span>USD · Year 1</span>
               </div>
-              <p class="renewal">$249 active renewal</p>
+              <p class="renewal">$329 active renewal</p>
               <ul class="license-list">
                 <li>Pragmatic Workflow tools</li>
                 <li>One named user</li>
@@ -526,11 +570,11 @@
         <aside class="suite-band" aria-label="Pragmatic Suite">
           <div>
             <h3>Considering the Suite?</h3>
-            <p>Pragmatic Suite combines Workflow and Operators in one license. For companies that may use both products, Suite is deliberately the stronger bundle value. At Studio 1–5, Workflow is $2,295 while Suite is $2,995, adding the full Operators product for $700 more.</p>
+            <p>Operators and Workflow are equal standalone products: Operators expands what Houdini can do, while Workflow expands how you work with it. For individuals, each standalone is $199 Indie / $399 FX. Suite combines both for $299 Indie / $599 FX. Company pricing remains tiered separately.</p>
           </div>
           <div class="suite-prices">
-            Indie $199 / $169 renewal<br>
-            FX $449 / $379 renewal<br>
+            Indie $299 / $249 renewal<br>
+            FX $599 / $499 renewal<br>
             Studio 1–5 $2,995 / $2,495 renewal
           </div>
         </aside>
@@ -708,6 +752,31 @@
             </ul>
           </details>
 
+          <details class="feature-group feature-group-future">
+            <summary>Continuous Hierarchy Zoom · In development</summary>
+            <ul>
+              <li>Continuous navigation through nested networks</li>
+              <li>Inline HDA expansion and HDA X-Ray concepts</li>
+              <li>Semantic zoom while preserving parent context</li>
+            </ul>
+          </details>
+
+          <details class="feature-group feature-group-future">
+            <summary>Cook Gate &amp; Freeze Region · In development</summary>
+            <ul>
+              <li>Temporary evaluation boundaries</li>
+              <li>Freeze known-good network regions while iterating elsewhere</li>
+            </ul>
+          </details>
+
+          <details class="feature-group feature-group-future">
+            <summary>Reference Lens &amp; Connect to Bookmark · In development</summary>
+            <ul>
+              <li>Expose indirect parameter references and hidden dependencies</li>
+              <li>Named long-distance graph destinations</li>
+            </ul>
+          </details>
+
           <details class="feature-group">
             <summary>Workspace preferences</summary>
             <ul>
@@ -737,12 +806,12 @@
 
           <details class="faq-item">
             <summary>What is included with Workflow?</summary>
-            <p>Workflow includes the shipping systems described in the main feature sections: High-Density Parameter Workspace, Context-Aware IDE, Pragmatic Node Info, Context-Aware Action System, Overlay Network Editor, Bezier Network Wires, Resource Monitor, Advanced Performance Profiler, C++ &amp; HDK Development, and their supporting workflow tools. Graph Lenses, Visual Graph Diffing, and Persistent Probes / Branch Experiments are shown separately as in-development directions and are not current shipping claims. Pragmatic Operators is a separate product.</p>
+            <p>Workflow includes the shipping systems described in the main feature sections: High-Density Parameter Workspace, Context-Aware IDE, Pragmatic Node Info, Context-Aware Action System, Overlay Network Editor, Bezier Network Wires, Resource Monitor, Advanced Performance Profiler, C++ &amp; HDK Development, and their supporting workflow tools. Graph Lenses, Visual Graph Diffing, Continuous Hierarchy Zoom / HDA X-Ray, Persistent Probes / Branch Experiments, Cook Gate / Freeze Region, and Reference Lens / Connect to Bookmark are labeled as in-development directions and are not current shipping claims. Pragmatic Operators is a separate product.</p>
           </details>
 
           <details class="faq-item">
             <summary>How does licensing work?</summary>
-            <p>Individual licenses are assigned to one named customer, support one concurrent seat and up to two activated devices, and include 12 months of update coverage. Eligible releases remain usable permanently. Studio licensing uses a floating concurrent seat pool sized to the purchased tier.</p>
+            <p>Individual licenses are assigned to one named customer, support one concurrent seat and up to two activated devices, and include 12 months of update coverage. Workflow is $199 Indie / $399 FX in year one, with $169 / $329 active renewal pricing. Eligible releases remain usable permanently. Studio licensing uses a floating concurrent seat pool sized to the purchased tier.</p>
           </details>
 
           <details class="faq-item">
@@ -783,6 +852,6 @@
     </div>
   </footer>
 
-  <script src="./workflow.js?v=20260927-1715"></script>
+  <script src="./workflow.js?v=20260927-1735"></script>
 </body>
 </html>
