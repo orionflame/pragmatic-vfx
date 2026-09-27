@@ -1674,3 +1674,62 @@ body {
     line-height: 1.04;
   }
 }
+
+
+/* Final section-title hierarchy: Raycast-like weight, hierarchy from size/spacing rather than boldness */
+.feature-copy h2,
+.section-heading h2,
+.final-cta h2 {
+  font-weight: 600 !important;
+  letter-spacing: -0.022em;
+}
+
+@media (max-width: 640px) {
+  .feature-copy h2,
+  .section-heading h2,
+  .final-cta h2 {
+    font-weight: 600 !important;
+  }
+}
+
+/* In-development systems */
+.future-section {
+  padding: 112px 0;
+  border-top: 1px solid var(--line);
+}
+
+.future-section .section-heading {
+  margin-bottom: 72px;
+}
+
+.future-feature {
+  opacity: 0.94;
+}
+
+.future-feature .eyebrow {
+  letter-spacing: 0.14em;
+}
+
+.feature-group-future summary::after {
+  content: "WIP";
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text-soft);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  vertical-align: 1px;
+}
+
+@media (max-width: 640px) {
+  .future-section {
+    padding: 82px 0;
+  }
+
+  .future-section .section-heading {
+    margin-bottom: 50px;
+  }
+}
